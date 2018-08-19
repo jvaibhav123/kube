@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: pythonapp
+  version: <VERSION>
   namespace: default
 spec:
   replicas: 1
