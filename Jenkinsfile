@@ -19,7 +19,7 @@ podTemplate(label: 'mypod', containers: [
 		script {
 		git credentialsId: 'e0c038d8-5106-4d22-87e5-16b018816ef7', url: 'https://github.com/jvaibhav123/kube.git'
 		def BUILD_TAG=sh(script:"git tag -l --points-at HEAD", returnStdout:true).trim()
-		env.BUILD_TAG='v.14'
+		env.BUILD_TAG=BUILD_TAG
 		}
 	   	
 	}
